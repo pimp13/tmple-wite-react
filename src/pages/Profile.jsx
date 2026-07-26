@@ -60,7 +60,7 @@ function PostRow({ post }) {
       />
       <div className="flex min-w-0 flex-1 flex-col justify-between">
         <div>
-          <span className="font-mono text-[11px] font-medium text-indigo-600">
+          <span className="text-[11px] font-medium text-indigo-600">
             # {post.category.name}
           </span>
           <h3 className="mt-0.5 line-clamp-1 text-sm font-bold text-slate-900">
@@ -75,7 +75,7 @@ function PostRow({ post }) {
             <ThumbsUp className="h-3 w-3" strokeWidth={2.5} />+
             {formatCount(post.meta.likeCount)}
           </span>
-          <span className="inline-flex items-center gap-1 rounded bg-rose-50 px-1.5 py-0.5 text-rose-700">
+          <span className="inline-flex items-center font-mono gap-1 rounded bg-rose-50 px-1.5 py-0.5 text-rose-700">
             <ThumbsDown className="h-3 w-3" strokeWidth={2.5} />-
             {formatCount(post.meta.dislikeCount)}
           </span>
@@ -108,7 +108,7 @@ function Stat({ icon: Icon, label, value }) {
 const profile = {
   username: "DevPouyaGh",
   displayName: "Pouya GhazanfaryNiya",
-  bio: "Backend-leaning full-stack developer. Writing about Node.js, PostgreSQL and the occasional React rabbit hole.",
+  bio: "این متن تستی هست برای بیوگرافی کاربر لورم ایپسوم متن ساختگی و لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
   avatar:
     "https://dummyjson.com/image/200x200/171923/ffffff?text=P&fontSize=64",
   location: "Tehran, Iran",
@@ -121,39 +121,42 @@ const profile = {
 const posts = [
   {
     id: 15,
-    title: "Hello This Post Created By NodeJS and postgres.js lib",
+    title:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه ",
     meta: {
       thumb:
         "https://dummyjson.com/image/400x200/6392F8/ffffff?text=Thumb+Post!&fontSize=16",
-      summary: "this is summary post",
+      summary: "لورم ایپسوم متن ساختگی با تولید و متون بلکه",
       likeCount: 1234,
       dislikeCount: 23,
     },
-    category: { id: 1, name: "Programming" },
+    category: { id: 1, name: "برنامه نویسی" },
   },
   {
     id: 17,
-    title: "PostgreSQL indexing strategies that actually matter",
+    title:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه ",
     meta: {
       thumb:
         "https://dummyjson.com/image/400x200/EF4444/ffffff?text=DB&fontSize=16",
-      summary: "Stop guessing. Here's how to read EXPLAIN ANALYZE properly.",
+      summary: "لورم ایپسوم متن ساختگی با تولید و متون بلکه",
       likeCount: 5023,
       dislikeCount: 112,
     },
-    category: { id: 3, name: "Database" },
+    category: { id: 3, name: "دیتابیس" },
   },
   {
     id: 18,
-    title: "Building a queue system with BullMQ and Redis",
+    title:
+      "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه ",
     meta: {
       thumb:
         "https://dummyjson.com/image/400x200/22C55E/ffffff?text=Queue&fontSize=16",
-      summary: "Background jobs, retries and dead letters, explained simply.",
+      summary: "لورم ایپسوم متن ساختگی با تولید و متون بلکه",
       likeCount: 341,
       dislikeCount: 9,
     },
-    category: { id: 1, name: "Programming" },
+    category: { id: 1, name: "برنامه نویسی" },
   },
 ];
 
@@ -196,7 +199,7 @@ export default function ProfilePage() {
                 <GitBranch className="h-3.5 w-3.5" />@{profile.username}
               </p>
             </div>
-            <button className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-slate-700">
+            <button className="rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-slate-700 cursor-pointer">
               Follow
             </button>
           </div>

@@ -33,7 +33,7 @@ const MainLayout = () => {
         <Link to="/">#</Link>
       </header>
 
-      <main className="mt-1">
+      <main className="mt-2">
         <Outlet /> {/* محتوای صفحات اینجا رندر می‌شود */}
       </main>
 
