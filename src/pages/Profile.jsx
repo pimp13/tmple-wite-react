@@ -111,9 +111,9 @@ const profile = {
   bio: "این متن تستی هست برای بیوگرافی کاربر لورم ایپسوم متن ساختگی و لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
   avatar:
     "https://dummyjson.com/image/200x200/171923/ffffff?text=P&fontSize=64",
-  location: "Tehran, Iran",
+  location: "تهران، ایران",
   website: "pouyagh.dev",
-  joined: "Mar 2023",
+  joined: "مهر 1400",
   isActive: true,
   followers: 842,
 };
@@ -225,7 +225,7 @@ export default function ProfilePage() {
           </a>
           <span className="flex items-center gap-1.5">
             <Calendar className="h-3.5 w-3.5" />
-            Joined {profile.joined}
+            عضو: {profile.joined}
           </span>
         </div>
 
