@@ -89,8 +89,8 @@ function PostRow({ post }) {
 
 function Stat({ icon: Icon, label, value }) {
   return (
-    <div className="flex flex-1 items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3">
-      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-50 text-slate-500">
+    <div className="flex flex-1 items-center gap-3 rounded-xl border border-slate-200 bg-white px-4 py-3 hover:shadow">
+      <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-slate-600">
         <Icon className="h-4 w-4" />
       </div>
       <div>
