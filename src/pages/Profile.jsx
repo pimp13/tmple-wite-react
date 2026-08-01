@@ -11,6 +11,7 @@ import {
   MoreHorizontalIcon,
   ClockIcon,
 } from "lucide-react";
+import { useState } from "react";
 
 // --- helpers -----------------------------------------------------------
 
@@ -181,7 +182,13 @@ const posts = [
 // --- page --------------------------------------------------------------
 
 export default function ProfilePage() {
+  const [activeTab, setActiveTab] = useState("courses");
   const totalLikes = posts.reduce((s, p) => s + p.meta.likeCount, 0);
+
+  const tabs = [
+    { key: "courses", label: "دوره های من" },
+    { key: "edit", label: "ویرایش پروفایل" },
+  ];
 
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
@@ -373,28 +380,71 @@ export default function ProfilePage() {
           />
         </div>
 
-        {/* posts */}
-        <div className="mt-8">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400">
-            Posts
-          </h2>
-          <div className="flex flex-col gap-3">
-            {posts.map((post) => (
-              <PostRow key={post.id} post={post} />
-            ))}
-          </div>
-
-          <div className="mt-4 flex justify-center">
+        <div className="mt-4 flex border-b border-slate-200">
+          {tabs.map((tab) => (
             <button
-              // onClick={() => setVisibleCount(prev => prev + stepCountShow)}
-              onClick={() => setVisibleCount(allCourses.length)}
-              className="rounded-lg border border-slate-300 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 cursor-pointer flex items-center gap-1"
+              key={tab.key}
+              onClick={() => setActiveTab(tab.key)}
+              className={`px-4 py-2 text-sm font-medium transition-colors relative cursor-pointer ${
+                activeTab === tab.key
+                  ? "text-[#1e3b7b]"
+                  : "text-slate-500 hover:text-slate-700"
+              }`}
             >
-              <ClockIcon className="w-4 h-4" />
-              <span>مشاهده بیشتر</span>
-              <span>...</span>
+              {tab.label}
+              {activeTab === tab.key && (
+                <span className="absolute bottom-0 right-0 left-0 h-0.5 bg-[#1e3b7b]" />
+              )}
             </button>
-          </div>
+          ))}
+        </div>
+
+        {/* posts */}
+        <div className="mt-4">
+          {activeTab === "courses" && (
+            <div className="mt-8">
+              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400">
+                Posts
+              </h2>
+              <div className="flex flex-col gap-3">
+                {posts.map((post) => (
+                  <PostRow key={post.id} post={post} />
+                ))}
+              </div>
+
+              <div className="mt-4 flex justify-center">
+                <button
+                  // onClick={() => setVisibleCount(prev => prev + stepCountShow)}
+                  onClick={() => setVisibleCount(allCourses.length)}
+                  className="rounded-lg border border-slate-300 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 cursor-pointer flex items-center gap-1"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="lucide lucide-clock w-4 h-4"
+                    ariaHidden="true"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                  </svg>
+                  <span>مشاهده بیشتر</span>
+                  <span>...</span>
+                </button>
+              </div>
+            </div>
+          )}
+          {activeTab === "edit" && (
+            <div>
+              <p>Hello World!</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
