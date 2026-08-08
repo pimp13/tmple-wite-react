@@ -12,6 +12,11 @@ import {
   ClockIcon,
 } from "lucide-react";
 import { useState } from "react";
+import { Loading } from "../components/ui/Loading";
+import { FancyInput } from "../components/ui/Input";
+import { EditProfileSecttion } from "../components/profile/EditProfileSection";
+import useDataProvider from "../hooks/useDataProvider";
+import { envConfig } from "../config/env";
 
 // --- helpers -----------------------------------------------------------
 
@@ -65,7 +70,7 @@ function PostRow({ post }) {
       <div className="flex min-w-0 flex-1 flex-col justify-between">
         <div>
           <span className="text-[11px] font-medium text-indigo-600">
-            # {post.category.name}
+            # {post?.category?.name ?? 'بدون دسته'}
           </span>
           <h3 className="mt-0.5 line-clamp-1 text-sm font-bold text-slate-900">
             {post.title}
@@ -182,13 +187,44 @@ const posts = [
 // --- page --------------------------------------------------------------
 
 export default function ProfilePage() {
+  const { loading, data: postsData } = useDataProvider({
+    urlPrefix: envConfig.VITE_GO_API_URL,
+    provider: "/posts",
+  });
+
   const [activeTab, setActiveTab] = useState("courses");
+  const [isLoading, setIsLoading] = useState(false);
+
   const totalLikes = posts.reduce((s, p) => s + p.meta.likeCount, 0);
 
   const tabs = [
     { key: "courses", label: "دوره های من" },
     { key: "edit", label: "ویرایش پروفایل" },
+    { key: "weblog", label: "وبلاگ من" },
   ];
+
+  const handleTabChange = (key) => {
+    if (key === activeTab) return; // اگر همون تب بود کاری نکن
+
+    setIsLoading(true);
+
+    // شبیه‌سازی لود (اگر داده واقعی داری، اینجا fetch کن)
+    setTimeout(() => {
+      setActiveTab(key);
+      setIsLoading(false);
+    }, 600); // مدت زمان لود رو اینجا تنظیم کن
+  };
+
+  if (loading) return <Loading />;
+
+  if (!postsData?.ok)
+    return (
+      <div className="min-h-screen p-10">
+        {postsData?.message ?? "خطا در برقراری با سرور"}
+      </div>
+    );
+  if (!postsData.data || postsData.data.length === 0)
+    return <div className="min-h-screen p-10">پست یافت نشد</div>;
 
   return (
     <div className="min-h-screen bg-slate-50 pb-16">
@@ -380,16 +416,19 @@ export default function ProfilePage() {
           />
         </div>
 
+        {/* Tabs */}
+
         <div className="mt-4 flex border-b border-slate-200">
           {tabs.map((tab) => (
             <button
               key={tab.key}
-              onClick={() => setActiveTab(tab.key)}
+              onClick={() => handleTabChange(tab.key)}
+              disabled={isLoading}
               className={`px-4 py-2 text-sm font-medium transition-colors relative cursor-pointer ${
                 activeTab === tab.key
                   ? "text-[#1e3b7b]"
                   : "text-slate-500 hover:text-slate-700"
-              }`}
+              } ${isLoading ? "opacity-60 cursor-not-allowed" : ""}`}
             >
               {tab.label}
               {activeTab === tab.key && (
@@ -399,51 +438,62 @@ export default function ProfilePage() {
           ))}
         </div>
 
-        {/* posts */}
-        <div className="mt-4">
-          {activeTab === "courses" && (
-            <div className="mt-8">
-              <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-slate-400">
-                Posts
-              </h2>
-              <div className="flex flex-col gap-3">
-                {posts.map((post) => (
-                  <PostRow key={post.id} post={post} />
-                ))}
-              </div>
+        {/* Content */}
+        <div className="mt-4 min-h-[200px]">
+          {isLoading ? (
+            <Loading />
+          ) : (
+            <>
+              {activeTab === "courses" && (
+                <div className="mt-8">
+                  <h2 className="mb-3 text-md font-semibold uppercase tracking-wide text-slate-400">
+                    پست ها
+                  </h2>
+                  <div className="flex flex-col gap-3">
+                    {postsData.data.map((post) => (
+                      <PostRow key={post.id} post={post} />
+                    ))}
+                  </div>
+                  <div className="mt-4 flex justify-center">
+                    <button
+                      onClick={() => setVisibleCount(allCourses.length)}
+                      className="rounded-lg border border-slate-300 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 cursor-pointer flex items-center gap-1"
+                    >
+                      {/* آیکون ساعت */}
+                      <span>مشاهده بیشتر</span>
+                      <span>...</span>
+                    </button>
+                  </div>
+                </div>
+              )}
 
-              <div className="mt-4 flex justify-center">
-                <button
-                  // onClick={() => setVisibleCount(prev => prev + stepCountShow)}
-                  onClick={() => setVisibleCount(allCourses.length)}
-                  className="rounded-lg border border-slate-300 bg-white px-5 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-50 cursor-pointer flex items-center gap-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-clock w-4 h-4"
-                    ariaHidden="true"
-                  >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M12 6v6l4 2"></path>
-                  </svg>
-                  <span>مشاهده بیشتر</span>
-                  <span>...</span>
-                </button>
-              </div>
-            </div>
-          )}
-          {activeTab === "edit" && (
-            <div>
-              <p>Hello World!</p>
-            </div>
+              {activeTab === "edit" && <EditProfileSecttion />}
+
+              {activeTab === "weblog" && (
+                <div>
+                  <h2 className="text-md text-slate-600 font-semibold">
+                    وبلاگ من
+                  </h2>
+                  <div className="mt-2">
+                    <p className="text-sm">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                      و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                      شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+                      بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه
+                      درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می
+                      طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                      ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی
+                      ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری
+                      موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و
+                      زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی
+                      سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده
+                      قرار گیرد.
+                    </p>
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>

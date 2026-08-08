@@ -1,10 +1,12 @@
 import { useState, useEffect, useCallback, useRef } from "react";
+import { envConfig } from "../config/env";
 
 /**
  * هوک عمومی برای ارسال درخواست به API با پشتیبانی از body، header، params و ...
  *
  * @param {Object} options
  * @param {string} options.provider - آدرس endpoint یا کلید provider
+ * @param {string} options.urlPrefix - base api address url
  * @param {'GET'|'POST'|'PUT'|'PATCH'|'DELETE'} [options.method='GET']
  * @param {Object} [options.params={}] - در GET به query string تبدیل می‌شود، در بقیه متدها به body می‌رود (مگر body جدا داده شود)
  * @param {Object|null} [options.body=null] - بدنه‌ی درخواست (برای POST/PUT/...)
@@ -39,7 +41,7 @@ function useDataProvider({
 
   const buildUrl = useCallback(
     (currentParams) => {
-      let prefix = urlPrefix || import.meta.env.VITE_API_URL;
+      let prefix = urlPrefix || envConfig.VITE_API_BASE_URL;
       let url = prefix + provider;
       const isGetLike = (method || "GET").toUpperCase() === "GET";
       if (isGetLike && currentParams && Object.keys(currentParams).length > 0) {
