@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 
 // Layouts
 import MainLayout from "../layouts/MainLayout";
+import DashboardLayout from "../layouts/DashboardLayout";
 // import AuthLayout from "../layouts/AuthLayout";
 
 // Components
@@ -12,9 +13,9 @@ import MainLayout from "../layouts/MainLayout";
 const Home = lazy(() => import("../pages/Home"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Profile = lazy(() => import("../pages/Profile"));
+const Dashboard = lazy(() => import("../pages/Dashboard"));
+const Auth = lazy(() => import("../pages/auth"));
 // const About = lazy(() => import("../pages/About"));
-// const Dashboard = lazy(() => import("../pages/Dashboard"));
-// const Login = lazy(() => import("../pages/Login"));
 
 // کامپوننت لودینگ ساده
 const PageLoader = () => (
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
         path: "/profile",
         element: withSuspense(Profile),
       },
+      // {
+      //   path: "/dashboard",
+      //   element: withSuspense(Dashboard),
+      // },
       //   {
       //     path: "about",
       //     element: withSuspense(About),
@@ -60,20 +65,20 @@ export const router = createBrowserRouter([
       //   },
     ],
   },
-  //   {
-  //     path: "/auth",
-  //     element: <AuthLayout />,
-  //     children: [
-  //       {
-  //         path: "login",
-  //         element: withSuspense(Login),
-  //       },
-  //       {
-  //         index: true,
-  //         element: <Navigate to="/auth/login" replace />,
-  //       },
-  //     ],
-  //   },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "home",
+        element: withSuspense(Dashboard),
+      },
+      {
+        index: true,
+        element: <Navigate to="home" replace />,
+      },
+    ],
+  },
   {
     path: "*",
     element: withSuspense(NotFound),

@@ -74,6 +74,7 @@ function useDataProvider({
       ).toUpperCase();
       const finalParams = overrideOptions.params ?? params;
       const finalHeaders = {
+        "serviceId": "test",
         "Content-Type": "application/json",
         ...headers,
         ...(overrideOptions.headers || {}),
