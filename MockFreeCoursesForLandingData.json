@@ -1,0 +1,549 @@
+{
+    "finalData": {
+        "id": "COURSE_003",
+        "title": "دوره پدافند با رویکرد شیمیایی",
+        "subtitle": "",
+        "startDate": "2026-07-01T06:40:10.039Z",
+        "endDate": "2026-07-05T06:40:09.879Z",
+        "price": 2900000,
+        "oldPrice": 0,
+        "discount": 0,
+        "rating": 4.5,
+        "image": "https://fs4.rayadars.com/azad1402/newdoreh/padafand-shimiyae.png",
+        "imageBg": "#F0E1E5",
+        "isSpecial": true,
+        "type": "organization"
+    },
+    "freeCourses": [
+        {
+            "rand_id": "CUl4l6ayus7c8PL1IMn",
+            "academy": "l4l66ii51ry",
+            "cr": "2026-05-30T12:04:26.524Z",
+            "up": "2026-05-30T12:04:26.524Z",
+            "rev_seq": "2",
+            "status": 1,
+            "jobgroups": null,
+            "meta": {
+                "id": "CUl4l6ayus7c8PL1IMn",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "327.p0a"
+                },
+                "desc": "<p><strong>دوره پدافند غیرعامل با رویکرد زیستی دی ماه 1404&nbsp;</strong></p>\n\n<p><strong>زمان ثبت نام:&nbsp;</strong><span style= color:#ff0000 >10 دی</span> ماه الی&nbsp;<span style= color:#ff0000 >21 بهمن </span>ماه&nbsp;1404</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >20 دی</span> ماه الی <span style= color:#ff0000 >29 بهمن</span> ماه 1404</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید&nbsp;<a href= http://fs4.rayadars.com/azad1404/padafand-poster/doc/zisti.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp; و آزمون ها لطفا حتما عضو<a href= http://ble.ir/amozeshpadafand  target= _blank > <span style= color:#ff0000 >کانال بله دوره های آموزشی پدافند غیرعامل</span>&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد زیستی(ویژه بنیاد مستضعفان) - دی ماه 1404\t\t",
+                "tags": [
+                    "پدافند غیرعامل ",
+                    "دوره ضمن خدمت پدافند غیرعامل",
+                    "پدافند سایبری"
+                ],
+                "schedule": {
+                    "end": "2026-06-27 00:00:00+00",
+                    "cycle": "non-cyclic",
+                    "start": "2026-01-09T20:30:44.295Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-06-27 00:00:00+00",
+                    "start": "2025-12-30T20:30:27.762Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-vi",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "certification": {
+                    "custom": true,
+                    "enable": true,
+                    "external": false,
+                    "imageSrc": "/emis-api/v1/idm-panel/file-get/users-drive/Uk664y4z4zh/m8a732oz-1yq.png",
+                    "minScore": "70",
+                    "userinfo": [],
+                    "imageSize": {
+                        "width": 568,
+                        "height": 402.234375
+                    }
+                }
+            },
+            "recommendations": [
+                {
+                    "row_id": 1510,
+                    "rand_id": "CUl4l6ayus7c8PL1IMn",
+                    "stack": [
+                        "kfey6avqb4"
+                    ],
+                    "start_time": "2026-02-01T09:18:28.174+00:00",
+                    "offset_val": "ml3j3dqm1gt",
+                    "status": 1,
+                    "meta": {
+                        "desc": "<p dir= RTL ><strong>برای ثبت نام در دوره، روی دکمه ثبت نام&nbsp;کلیک کنید.</strong></p>\n\n<p><strong>زمان ثبت نام:&nbsp;</strong><span style= color:#ff0000 >10 دی</span>&nbsp;ماه الی&nbsp;<span style= color:#ff0000 >21 بهمن</span> ماه 1404</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >20 دی</span> ماه الی&nbsp;<span style= color:#ff0000 >29 بهمن</span> ماه 1404</p>\n\n<p dir= RTL ><strong>جهت کسب&nbsp;اطلاعات بیشتر، بر روی گزینه&nbsp;شناسنامه دوره</strong>&nbsp;<strong>کلیک نمایید.</strong></p>\n\n<p dir= RTL ><strong>این دوره دارای گواهینامه می باشد.</strong></p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                        "thumb": "https://fs4.rayadars.com/azad1402/newdoreh/padafand-zisti.png",
+                        "title": "اطلاعیه پلن دی و بهمن 1404"
+                    },
+                    "end_time": "2026-05-23T09:02:50.887+00:00",
+                    "rev_seq": 1,
+                    "up": null
+                }
+            ]
+        },
+        {
+            "rand_id": "CUl4l6ayus7c8PL1IMm",
+            "academy": "l4l66ii51ry",
+            "cr": "2026-06-13T13:39:35.404Z",
+            "up": "2026-06-13T13:39:35.404Z",
+            "rev_seq": "2",
+            "status": 1,
+            "jobgroups": null,
+            "meta": {
+                "id": "CUl4l6ayus7c8PL1IMm",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "327.p09"
+                },
+                "desc": "<p><strong>دوره پدافند غیرعامل با رویکرد زیستی دی ماه 1404&nbsp;</strong></p>\n\n<p><strong>زمان ثبت نام:&nbsp;</strong><span style= color:#ff0000 >10 دی</span> ماه الی<span style= color:#ff0000 >&nbsp;5 اسفند</span> ماه&nbsp;1404</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >20 دی</span> ماه الی <span style= color:#ff0000 >12 اسفند</span> ماه 1404</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید&nbsp;<a href= http://fs4.rayadars.com/azad1404/padafand-poster/doc/zisti.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp; و آزمون ها لطفا حتما عضو<a href= http://ble.ir/amozeshpadafand  target= _blank > <span style= color:#ff0000 >کانال بله دوره های آموزشی پدافند غیرعامل</span>&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد زیستی- دی ماه 1404\t\t",
+                "tags": [
+                    "پدافند غیرعامل ",
+                    "پدافند سایبری",
+                    "دوره ضمن خدمت پدافند غیرعامل"
+                ],
+                "schedule": {
+                    "end": "2026-06-27 00:00:00+00",
+                    "cycle": "non-cyclic",
+                    "start": "2026-01-09T20:30:40.773Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-06-27 00:00:00+00",
+                    "start": "2025-12-30T20:30:24.271Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-vi",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "certification": {
+                    "custom": true,
+                    "enable": true,
+                    "external": false,
+                    "imageSrc": "/emis-api/v1/idm-panel/file-get/users-drive/Uk664y4z4zh/m8a732oz-1yq.png",
+                    "minScore": "60",
+                    "userinfo": [
+                        {
+                            "x": 383,
+                            "y": 170,
+                            "key": "lastName",
+                            "label": "نام خانوادگی"
+                        },
+                        {
+                            "x": 250,
+                            "y": 168,
+                            "key": "natCode",
+                            "label": "کد ملی"
+                        },
+                        {
+                            "x": 390,
+                            "y": 258,
+                            "key": "score",
+                            "label": "نمره کسب شده"
+                        }
+                    ],
+                    "imageSize": {
+                        "width": 568,
+                        "height": 402.234375
+                    }
+                }
+            },
+            "recommendations": [
+                {
+                    "row_id": 1509,
+                    "rand_id": "CUl4l6ayus7c8PL1IMm",
+                    "stack": [
+                        "kf34cw93zb"
+                    ],
+                    "start_time": "2026-02-01T07:16:15.048+00:00",
+                    "offset_val": "ml3eq7go42q",
+                    "status": 1,
+                    "meta": {
+                        "desc": "<p dir= RTL ><strong>برای ثبت نام در دوره، روی دکمه ثبت نام&nbsp;کلیک کنید.</strong></p>\n\n<p><strong>زمان ثبت نام</strong>: <span style= color:#ff0000 >10&nbsp;دی</span><strong>&nbsp;</strong>ماه الی<span style= color:#ff0000 >&nbsp;5 اسفند</span><span style= color:#ff0000 >&nbsp;</span>ماه 1404</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >20 دی&nbsp;</span>ماه الی&nbsp;<span style= color:#ff0000 >12 اسفند</span>&nbsp;ماه 1404</p>\n\n<p dir= RTL ><strong>جهت کسب&nbsp;اطلاعات بیشتر، بر روی گزینه&nbsp;<span style= color:#ff0000 >شناسنامه دوره</span></strong>&nbsp;<strong>کلیک نمایید.</strong></p>\n\n<p dir= RTL ><strong>این دوره دارای گواهینامه می باشد.</strong></p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                        "thumb": "https://fs4.rayadars.com/azad1402/newdoreh/padafand-zisti.png",
+                        "title": "اطلاعیه پلن دی و بهمن 1404"
+                    },
+                    "end_time": "2026-05-23T09:02:37.459+00:00",
+                    "rev_seq": 1,
+                    "up": null
+                }
+            ]
+        },
+        {
+            "rand_id": "CUmjju7ana44aPL1IM5",
+            "academy": "l4l66ii51ry",
+            "cr": "2026-07-04T18:42:34.814Z",
+            "up": "2026-07-04T18:42:34.814Z",
+            "rev_seq": "2",
+            "status": 1,
+            "jobgroups": null,
+            "meta": {
+                "id": "CUmjju7ana44aPL1IM5",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "337.p05"
+                },
+                "desc": "<p><strong>پدافند سایبری تهدیدات گوشی های هوشمند - اسفند 1404</strong></p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >2 اسفند</span> ماه الی <span style= color:#ff0000 >27 فروردین</span> ماه 1405</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p>&nbsp;</p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید&nbsp;<a href= https://fs4.rayadars.com/azad1404/padafand-poster/shenasnamedoreha/tahdidat.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp; و آزمون ها لطفا حتما <span style= color:#ff0000 >عضو</span><a href= http://ble.ir/amozeshpadafand  target= _blank ><span style= color:#ff0000 > کانال بله دوره های آموزشی پدافند غیرعامل</span>&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند سایبری تهدیدات گوشی های هوشمند -ویژه بانک شهر- اسفند 1404",
+                "tags": [
+                    "پدافند غیرعامل",
+                    "پدافند غیر عامل ",
+                    "دوره ضمن خدمت پدافند غیرعامل ",
+                    "پدافند سایبری ",
+                    "دوره ضمن خدمت پدافند سایبری"
+                ],
+                "schedule": {
+                    "end": "2026-04-16T08:30:23.286Z",
+                    "cycle": "non-cyclic",
+                    "start": "2026-02-20T20:30:23.280Z"
+                },
+                "failedCount": 15,
+                "passedCount": 20,
+                "noScoreCount": 25,
+                "certification": {
+                    "custom": true,
+                    "enable": true,
+                    "external": false,
+                    "imageSrc": "/emis-api/v1/idm-panel/file-get/users-drive/Uk664y4z4zh/ml22oj2j-6i.png",
+                    "minScore": "60",
+                    "userinfo": [
+                        {
+                            "x": 431,
+                            "y": 169,
+                            "key": "firstName",
+                            "label": "نام"
+                        },
+                        {
+                            "x": 377,
+                            "y": 168,
+                            "key": "lastName",
+                            "label": "نام خانوادگی"
+                        },
+                        {
+                            "x": 266,
+                            "y": 170,
+                            "key": "natCode",
+                            "label": "کد ملی"
+                        },
+                        {
+                            "x": 163,
+                            "y": 169,
+                            "key": "workPlace",
+                            "label": "محل اشتغال"
+                        },
+                        {
+                            "x": 462,
+                            "y": 227,
+                            "key": "courseEnd",
+                            "label": "پایان دوره"
+                        },
+                        {
+                            "x": 388,
+                            "y": 256,
+                            "key": "score",
+                            "label": "نمره کسب شده"
+                        },
+                        {
+                            "x": 85,
+                            "y": 1,
+                            "key": "nowDate",
+                            "label": "تاریخ"
+                        }
+                    ],
+                    "imageSize": {}
+                }
+            },
+            "recommendations": [
+                {
+                    "row_id": 1692,
+                    "rand_id": "CUmjju7ana44aPL1IM5",
+                    "stack": [
+                        "kfey6ayj1j"
+                    ],
+                    "start_time": "2026-04-14T13:32:41.219+00:00",
+                    "offset_val": "mnynvn2b350",
+                    "status": 1,
+                    "meta": {
+                        "desc": "<p dir= RTL ><strong>برای شرکت در دوره، روی دکمه<span style= color:#ff0000 > ورود</span> کلیک کنید.</strong></p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >2 اسفند</span> ماه الی <span style= color:#ff0000 >27 فروردین</span>&nbsp;ماه 1405</p>\n\n<p dir= RTL ><strong>جهت کسب&nbsp;اطلاعات بیشتر، بر روی گزینه&nbsp;<span style= color:#ff0000 >شناسنامه دوره</span></strong>&nbsp;<strong>کلیک نمایید.</strong></p>\n\n<p dir= RTL >&nbsp;</p>\n\n<p dir= RTL ><strong>این دوره دارای گواهینامه می باشد.</strong></p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                        "thumb": "https://fs4.rayadars.com/azad1404/padafand-poster/tahdidategoshi.jpg",
+                        "title": "اطلاعیه پلن اسفند 1404"
+                    },
+                    "end_time": "2026-05-23T11:25:21.128+00:00",
+                    "rev_seq": 1,
+                    "up": null
+                }
+            ]
+        },
+        {
+            "rand_id": "CUm4nsrx7713PL1IMh",
+            "academy": "l4l66ii51ry",
+            "cr": "2026-07-01T05:18:57.418Z",
+            "up": "2026-07-01T05:18:57.418Z",
+            "rev_seq": "2",
+            "status": 1,
+            "jobgroups": null,
+            "meta": {
+                "id": "CUm4nsrx7713PL1IMh",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "323.p0h"
+                },
+                "desc": "<p><strong>دوره پدافند پرتوی -مرداد 1405</strong></p>\n\n<p><strong>زمان ثبت نام: </strong><span style= color:#ff0000 >11 تیر</span> ماه الی <span style= color:#ff0000 >10 شهریور</span> ماه 1405</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >3 مرداد&nbsp;</span>ماه الی<span style= color:#ff0000 > 21 شهریور</span> ماه 1405</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p><strong><span style= color:#ff0000 >قیمت دوره:</span>70 هزارتومان</strong></p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید&nbsp;<a href= http://fs4.rayadars.com/azad1404/padafand-poster/doc/partovi.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp;و آزمون ها لطفا حتما عضو<a href= http://ble.ir/amozeshpadafand  target= _blank > </a><a href= http://ble.ir/amozeshpadafand  target= _blank ><span style= color:#ff0000 >کانال بله دوره های آموزشی پدافند غیرعامل</span></a><a href= http://ble.ir/amozeshpadafand  target= _blank >&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند پرتوی (ویژه افراد دارای مدرک تحصیلی کارشناسی، ارشد و دکتری) - مرداد 1405",
+                "schedule": {
+                    "end": "2026-09-12T20:29:01.377Z",
+                    "start": "2026-07-24T20:30:01.376Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-09-01T20:29:00.706Z",
+                    "fee": {
+                        "default": [
+                            {
+                                "label": "70 هزار تومان",
+                                "amount": "700,000",
+                                "currency": "IRR"
+                            }
+                        ]
+                    },
+                    "start": "2026-07-01T20:30:00.705Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-vi",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "failedCount": 0,
+                "passedCount": 0,
+                "noScoreCount": 0,
+                "certification": {
+                    "enable": true,
+                    "minScore": "60",
+                    "userinfo": [],
+                    "imageSize": {}
+                }
+            },
+            "recommendations": [
+                {
+                    "row_id": 1719,
+                    "rand_id": "CUm4nsrx7713PL1IMh",
+                    "stack": [
+                        "kf34cw93zb"
+                    ],
+                    "start_time": "2026-06-29T09:19:47.208+00:00",
+                    "offset_val": null,
+                    "status": 1,
+                    "meta": {
+                        "desc": "<p dir= RTL ><strong>برای ثبت نام در دوره، روی دکمه<span style= color:#ff0000 > ثبت نام&nbsp;</span>کلیک کنید.</strong></p>\n\n<p><strong>زمان ثبت نام</strong>:<span style= color:#ff0000 >&nbsp;11 تیر<strong>&nbsp;</strong></span>ماه الی&nbsp;<span style= color:#ff0000 >10 شهریور </span>ماه 1405</p>\n\n<p><strong>زمان برگزاری</strong>:<span style= color:#ff0000 > 3 مرداد</span> ماه الی <span style= color:#ff0000 >21 شهریور</span> ماه 1405</p>\n\n<p dir= RTL ><strong>جهت کسب&nbsp;اطلاعات بیشتر، بر روی گزینه<span style= color:#ff0000 >&nbsp;شناسنامه دوره</span></strong>&nbsp;<strong>کلیک نمایید.</strong></p>\n\n<p dir= RTL ><strong>این دوره دارای گواهینامه می باشد.</strong></p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                        "thumb": "https://fs4.rayadars.com/azad1403/padafand-partovi/motion/partovi/partovi-karshenasi.png",
+                        "title": "اطلاعیه مرداد 1405",
+                        "regBtnShow": true,
+                        "infoBtnShow": true
+                    },
+                    "end_time": "2026-09-12T20:29:47.21+00:00",
+                    "rev_seq": null,
+                    "up": "2026-07-01T05:19:06.041454+00:00"
+                }
+            ]
+        },
+        {
+            "rand_id": "CUleir3w2r74pPL1IMf",
+            "academy": "l4l66ii51ry",
+            "cr": "2026-07-01T05:18:22.605Z",
+            "up": "2026-07-01T05:18:22.605Z",
+            "rev_seq": "2",
+            "status": 1,
+            "jobgroups": null,
+            "meta": {
+                "id": "CUleir3w2r74pPL1IMf",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "330.p0d"
+                },
+                "desc": "<p><strong>دوره پدافند غیرعامل با رویکرد مردم محور مرداد 1405</strong></p>\n\n<p><strong>زمان ثبت نام: </strong><span style= color:#ff0000 >11 تیر</span> ماه الی <span style= color:#ff0000 >10 شهریور</span> ماه 1405</p>\n\n<p><strong>زمان برگزاری دوره:</strong><span style= color:#ff0000 >&nbsp;3 مرداد&nbsp;</span>ماه الی <span style= color:#ff0000 >21 شهریور&nbsp;</span>ماه 1405</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p><strong><span style= color:#ff0000 >قیمت دوره: </span>75 هزارتومان</strong></p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید<span style= color:#ff0000 >&nbsp;</span><a href= http://fs4.rayadars.com/azad1404/padafand-poster/doc/mardommehvar.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp; و آزمون ها لطفا حتما عضو<a href= http://ble.ir/amozeshpadafand  target= _blank > <span style= color:#ff0000 >کانال بله دوره های آموزشی پدافند غیرعامل</span>&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد مردم محور - مرداد 1405\t",
+                "schedule": {
+                    "end": "2026-09-12T20:29:18.356Z",
+                    "start": "2026-07-24T20:30:18.354Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-09-01T20:29:29.062Z",
+                    "fee": {
+                        "default": [
+                            {
+                                "label": "75 هزار تومان",
+                                "amount": "750,000",
+                                "currency": "IRR"
+                            }
+                        ]
+                    },
+                    "start": "2026-07-01T20:30:29.061Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-vi",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "failedCount": 0,
+                "passedCount": 0,
+                "noScoreCount": 0,
+                "certification": {
+                    "enable": true,
+                    "minScore": "60",
+                    "userinfo": [],
+                    "imageSize": {}
+                }
+            },
+            "recommendations": [
+                {
+                    "row_id": 1717,
+                    "rand_id": "CUleir3w2r74pPL1IMf",
+                    "stack": [
+                        "kf34cw93zb"
+                    ],
+                    "start_time": "2026-06-29T09:12:54.426+00:00",
+                    "offset_val": null,
+                    "status": 1,
+                    "meta": {
+                        "desc": "<p dir= RTL ><strong>برای ثبت نام در دوره، روی دکمه <span style= color:#ff0000 >ثبت نام</span>&nbsp;کلیک کنید.</strong></p>\n\n<p><strong>زمان ثبت نام:&nbsp;</strong><span style= color:#ff0000 >11 تیر </span>ماه الی&nbsp;<span style= color:#ff0000 >10 شهریور</span> ماه 1404</p>\n\n<p><strong>زمان برگزاری دوره: </strong><span style= color:#ff0000 >3 مرداد</span><strong>&nbsp;</strong>ماه الی<span style= color:#ff0000 >&nbsp;21 شهریور</span> ماه 1404</p>\n\n<p dir= RTL ><strong>جهت کسب&nbsp;اطلاعات بیشتر، بر روی گزینه&nbsp;<span style= color:#ff0000 >شناسنامه دوره</span></strong>&nbsp;<strong>کلیک نمایید.</strong></p>\n\n<p dir= RTL ><strong>این دوره دارای گواهینامه می باشد.</strong></p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                        "thumb": "https://fs4.rayadars.com/azad1402/newdoreh/padafand-mardommehvar.png",
+                        "title": "اطلاعیه پلن مرداد 1405",
+                        "regBtnShow": true,
+                        "infoBtnShow": true
+                    },
+                    "end_time": "2026-09-12T20:29:54.429+00:00",
+                    "rev_seq": null,
+                    "up": "2026-07-01T05:18:33.139139+00:00"
+                }
+            ]
+        }
+    ],
+    "vizeSazmanCourse": [
+        {
+            "id": "CUl4l6bahm6jrPL1",
+            "plmeta": {
+                "desc": "<p><strong>&nbsp; &nbsp; &nbsp; ساعت دوره: </strong>12 ساعت</p>\n\n<p><strong>&nbsp; &nbsp; &nbsp; مدرسین دوره: </strong>آقای&nbsp;حمید رضا کاووسی،&nbsp;آقای محمدمهدی واعظی نژاد، آقای گرجی</p>\n\n<p><strong>&nbsp; &nbsp; &nbsp;دروس آموزش:</strong></p>\n\n<ul>\n\t<li>مقدمه ای بر پدافند سایبری، مبانی فضای سایبری&nbsp;</li>\n\t<li>&nbsp;امنیت کاربری ها در فضای سایبری</li>\n\t<li>تهدید جنگ و سلاح</li>\n\t<li>حریم خصوصی کاربران و خدمات سایبری</li>\n\t<li>حفاظت و مصون سازی سایبری</li>\n</ul>\n\n<p><strong>&nbsp; &nbsp; &nbsp;<a href=\"http://ble.ir/amozeshpadafand\">کانا</a></strong><a href=\"http://ble.ir/amozeshpadafand\"><strong>ل بله (اطلاع رسانی دوره های آموزشی پدافند غیرعامل&nbsp;</strong></a>)</p>\n\n<p><strong>&nbsp; &nbsp; ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 91094079</strong><strong>-021- داخلی 1 - گفتگوی آنلاین</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد سایبری (سطح 1)",
+                "thumb": "https://fs4.rayadars.com/azad1402/newdoreh/padafand/cyberi.png",
+                "duration": "12"
+            },
+            "immeta": {
+                "id": "CUl4l6bahm6jrPL1IMy",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "239.p18"
+                },
+                "desc": "<p><strong>پدافند غیرعامل با رویکرد سایبری سطح اول مرداد 1405</strong></p>\n\n<p><strong>زمان ثبت نام: <span style= color:#ff0000 >11 تیر&nbsp;</span></strong>ماه الی <span style= color:#ff0000 >10 شهریور</span> ماه 1405</p>\n\n<p><strong>زمان برگزاری دوره:</strong>&nbsp;<span style= color:#ff0000 >3 مرداد&nbsp;</span>ماه الی<span style= color:#ff0000 > 21 شهریور&nbsp;</span>ماه 1405</p>\n\n<p><strong>نحوه برگزاری:</strong> غیرهمزمان فرایند محور</p>\n\n<p><strong><span style= color:#ff0000 >قیمت دوره:</span> 75 هزارتومان</strong></p>\n\n<p><strong>برای دریافت اطلاعات بیشتر می توانید&nbsp;<a href= http://fs4.rayadars.com/azad1404/padafand-poster/doc/cyber1.pdf ><span style= color:#ff0000 >شناسنامه دوره</span></a></strong> <strong>را دریافت کنید.</strong></p>\n\n<p><strong>مهم: برای دریافت پیام ها و اطلاعیه های مربوط به دوره&nbsp;و آزمون ها لطفا حتما عضو<a href= http://ble.ir/amozeshpadafand  target= _blank > <span style= color:#ff0000 >کانال بله دوره های آموزشی پدافند غیرعامل</span>&nbsp;</a>شوید.</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد سایبری سطح اول ( مرداد 1405)\t",
+                "schedule": {
+                    "end": "2026-09-12T20:29:30.474Z",
+                    "start": "2026-07-24T20:30:30.473Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-09-01T20:29:12.931Z",
+                    "fee": {
+                        "default": [
+                            {
+                                "label": "75 هزار تومان",
+                                "amount": "750,000",
+                                "currency": "IRR"
+                            }
+                        ]
+                    },
+                    "start": "2026-06-20T20:30:12.929Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-vi",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "failedCount": 0,
+                "passedCount": 0,
+                "noScoreCount": 40,
+                "certification": {
+                    "enable": true,
+                    "minScore": "60",
+                    "userinfo": [],
+                    "imageSize": {}
+                }
+            }
+        },
+        {
+            "id": "CUl4l6cvbx6e5PL1",
+            "plmeta": {
+                "desc": "<p><strong>ساعت دوره: </strong>8 ساعت</p>\n\n<p><strong>دروس آموزش:</strong></p>\n\n<p>تهدیدات شیمیایی</p>\n\n<p>تاب آوری سازمانها در حوادث شیمیایی</p>\n\n<p>ارزیابی و مدیریت ریسک در زیرساخت های شیمیایی</p>\n\n<p>رفتارشناسی مواد شیمیایی</p>\n\n<p><strong><a href=\"http://ble.ir/amozeshpadafand\">کانا</a></strong><a href=\"http://ble.ir/amozeshpadafand\"><strong>ل بله (اطلاع رسانی دوره های آموزشی پدافند غیرعامل&nbsp;</strong></a>)</p>\n\n<p><strong>ارتباط با&nbsp;پشتیبانی&nbsp;فنی: 54914-021- داخلی 130 و 112 -گفتگوی آنلاین</strong></p>\n",
+                "name": "پدافند غیرعامل با رویکرد شیمیایی",
+                "thumb": "https://fs4.rayadars.com/azad1402/newdoreh/padafand-shimiyae.png",
+                "duration": "8"
+            },
+            "immeta": {
+                "id": "CUl4l6cvbx6e5PL1IM1",
+                "vle": {
+                    "enableSocialLMS": true,
+                    "socialLMSImplementId": "233.p01"
+                },
+                "desc": "<p><strong>اهداف کلی آموزش:</strong> شنایی با انواع آسیب ها و تهدیدات شیمیایی و روش های مقابله با آن.</p>\n\n<p><strong>انتظارات آموزش:</strong>&nbsp;کاستن از آسیب پذیری ها و کاهش اثرات تهدیدات شیمیایی و بالا&nbsp;بردن امنیت و ایمن سازی با راهکارهای پدافند شیمیایی</p>\n\n<p>برای دریافت اطلاعات بیشتر می توانید <strong><a href= https://fs4.rayadars.com/azad1401/padafand/pdf/sh_shimeaei.pdf ><span style= color:#3498db >شناسنامه دوره</span></a></strong> را دریافت کنید.</p>\n",
+                "name": "پدافند غیرعامل با رویکرد شیمیایی (شهریورماه 1401)",
+                "tags": [
+                    "پدافند غیرعامل"
+                ],
+                "thumb": "https://fs4.rayadars.com/azad1401/padafand/pic/p_shimiayee.png",
+                "token": "Q1VsNGw2Y3ZieDZlNVBMMUlNMS5tb3prcnNiNjFveA==",
+                "schedule": {
+                    "end": "2026-09-22T05:57:14.209Z",
+                    "cycle": "non-cyclic",
+                    "start": "2022-08-23T04:57:14.203Z"
+                },
+                "subscribe": {
+                    "by": {
+                        "form": true
+                    },
+                    "end": "2026-09-22T20:29:23.948Z",
+                    "start": "2022-08-16T19:30:23.944Z",
+                    "audince": "anyone",
+                    "userInfosForm": "user-infos/base-iii",
+                    "enableUserInfosForm": true,
+                    "enableAcademySelection": true
+                },
+                "certification": {
+                    "fee": {
+                        "default": [
+                            {
+                                "desc": "<p>هزینه پرداخت شده صرفا جهت صدور گواهی می باشد.</p>\n",
+                                "label": "19 هزار تومان",
+                                "amount": "10,000",
+                                "currency": "IRR"
+                            }
+                        ]
+                    },
+                    "custom": true,
+                    "enable": true,
+                    "external": false,
+                    "imageSrc": "",
+                    "minScore": "60",
+                    "userinfo": [
+                        {
+                            "x": 374.7881774902344,
+                            "y": 167.5034637451172,
+                            "key": "courseEnd",
+                            "label": "پایان دوره"
+                        }
+                    ],
+                    "imageSize": {}
+                }
+            }
+        }
+    ]
+}

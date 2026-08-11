@@ -44,7 +44,7 @@ export default function Dashboard() {
   return (
     <div
       dir="rtl"
-      className="max-h-screen w-full bg-[#F5F8FD] font-[Vazirmatn] text-slate-800"
+      className="min-h-screen w-full bg-[#F5F8FD] font-[Vazirmatn] text-slate-800"
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
@@ -72,8 +72,10 @@ export default function Dashboard() {
 
       <div className="flex mx-auto">
         {/* ---------- Sidebar ---------- */}
+        {/* حالا سایدبار همیشه fixed هست و به سمت راست چسبیده،
+            حتی موقع اسکرول کردن صفحه هم جابه‌جا نمی‌شه */}
         <aside
-          className={`fixed top-0 bottom-0 h-screen lg:static inset-y-0 right-0 z-40 w-72 bg-white border-l border-slate-100 flex flex-col transition-transform duration-300 ease-out
+          className={`fixed top-0 bottom-0 h-screen inset-y-0 right-0 z-40 w-72 bg-white border-l border-slate-100 flex flex-col transition-transform duration-300 ease-out
   ${sidebarOpen ? "translate-x-0" : "translate-x-full lg:translate-x-0"}`}
         >
           <div className="flex items-center justify-between px-6 py-6">
@@ -99,7 +101,7 @@ export default function Dashboard() {
             </button>
           </div>
 
-          <nav className="flex-1 px-4 mt-2 space-y-1">
+          <nav className="flex-1 px-4 mt-2 space-y-1 overflow-y-auto">
             {navItems.map((item) => {
               const Icon = item.icon;
               const isActive = active === item.key;
@@ -155,9 +157,10 @@ export default function Dashboard() {
         )}
 
         {/* ---------- Main content ---------- */}
-        <main className="flex-1 min-w-0">
+        {/* lg:mr-72 برای رزرو کردن فضای سایدبار ثابت اضافه شد */}
+        <main className="flex-1 min-w-0 lg:mr-72">
           {/* Desktop header */}
-          <header className="hidden lg:flex items-center justify-between px-8 py-5">
+          <header className="hidden lg:flex items-center justify-between px-8 py-3 bg-slate-200/60 mb-4">
             <div>
               <p className="text-xs text-slate-400 mb-0.5">خانه</p>
               <h1 className="text-lg font-bold text-slate-800">
