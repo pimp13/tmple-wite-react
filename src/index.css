@@ -4,6 +4,10 @@ body {
   font-family: Vazirmatn;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 /* 
 :root {
   --text: #6b6375;

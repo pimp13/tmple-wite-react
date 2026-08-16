@@ -134,7 +134,7 @@ export default function Dashboard() {
               پیشرفت این هفته
             </p>
             <div className="w-full h-1.5 rounded-full bg-white overflow-hidden mb-2">
-              <div className="h-full w-[8%] rounded-full bg-[#1C3A82]" />
+              <div className="h-full w-[20%] rounded-full bg-[#1C3A82]" />
             </div>
             <p className="text-[11px] text-slate-500">
               هنوز شروع نکرده‌ای، همین امروز شروع کن!
@@ -164,7 +164,7 @@ export default function Dashboard() {
             <div>
               <p className="text-xs text-slate-400 mb-0.5">خانه</p>
               <h1 className="text-lg font-bold text-slate-800">
-                سلام، محمدرضا 👋
+                سلام، پویا 👋
               </h1>
             </div>
 
@@ -187,7 +187,7 @@ export default function Dashboard() {
               <div className="flex items-center gap-2.5 pr-3 border-r border-slate-100">
                 <div>
                   <p className="text-sm font-semibold text-slate-700 leading-tight">
-                    محمدرضا حسینی خالجیری
+                    پویا غضنفری نیا
                   </p>
                   <p className="text-[11px] text-slate-400">دانشجوی آکادمی</p>
                 </div>

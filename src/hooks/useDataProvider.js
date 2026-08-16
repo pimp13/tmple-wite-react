@@ -74,7 +74,7 @@ function useDataProvider({
       ).toUpperCase();
       const finalParams = overrideOptions.params ?? params;
       const finalHeaders = {
-        "serviceId": "test",
+        serviceId: "test",
         "Content-Type": "application/json",
         ...headers,
         ...(overrideOptions.headers || {}),
@@ -102,8 +102,10 @@ function useDataProvider({
         );
 
         if (!res.ok) {
-          const errText = await res.text().catch(() => "");
-          throw new Error(`Request failed [${res.status}]: ${errText}`);
+          const errText = await res.json().catch(() => "");
+          throw new Error(
+            `خطا [${res.status}]: ${errText?.message ?? "خطای سرور"}`,
+          );
         }
 
         // اگر response بدنه نداشت (مثلا 204) خطا نده

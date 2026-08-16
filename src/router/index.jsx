@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 // Layouts
 import MainLayout from "../layouts/MainLayout";
 import DashboardLayout from "../layouts/DashboardLayout";
+import AuthLayout from "../layouts/AuthLayout";
 // import AuthLayout from "../layouts/AuthLayout";
 
 // Components
@@ -14,7 +15,7 @@ const Home = lazy(() => import("../pages/Home"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Profile = lazy(() => import("../pages/Profile"));
 const Dashboard = lazy(() => import("../pages/Dashboard"));
-const Auth = lazy(() => import("../pages/auth"));
+const Auth = lazy(() => import("../pages/Auth"));
 // const About = lazy(() => import("../pages/About"));
 
 // کامپوننت لودینگ ساده
@@ -49,10 +50,6 @@ export const router = createBrowserRouter([
       //   element: withSuspense(Dashboard),
       // },
       //   {
-      //     path: "about",
-      //     element: withSuspense(About),
-      //   },
-      //   {
       //     // مسیرهای محافظت‌شده
       //     element: <ProtectedRoute />,
       //     children: [
@@ -79,6 +76,18 @@ export const router = createBrowserRouter([
       },
     ],
   },
+
+  {
+    path: "/auth",
+    element: <AuthLayout />,
+    children: [
+      {
+        path: "",
+        element: withSuspense(Auth),
+      },
+    ],
+  },
+
   {
     path: "*",
     element: withSuspense(NotFound),
