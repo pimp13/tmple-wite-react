@@ -1,4 +1,5 @@
 import { PostCard } from "../components/PostCard";
+import { Demo } from "../components/ui/Toastalert";
 import useDataProvider from "../hooks/useDataProvider";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-slate-50 p-6">
       <div className="mx-auto grid max-w-6xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        Hello world this is home page...
+        <Demo />
         {/* {posts?.data?.map((post) => (
           <PostCard key={post.id} post={post} />
         ))} */}

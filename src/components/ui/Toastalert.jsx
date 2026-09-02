@@ -6,13 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import {
-  CheckCircle2,
-  XCircle,
-  AlertTriangle,
-  Info,
-  X,
-} from "lucide-react";
+import { CheckCircle2, XCircle, AlertTriangle, Info, X } from "lucide-react";
 
 /* ===========================================================
    ۱) هسته‌ی Toast — این بخش رو توی پروژه‌ات کپی کن
@@ -94,12 +88,18 @@ function ToastItem({ toast, onClose }) {
       }`}
     >
       <div className="flex items-start gap-3 p-4">
-        <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${s.iconBg}`}>
+        <div
+          className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full ${s.iconBg}`}
+        >
           <Icon size={17} className={s.iconColor} strokeWidth={2} />
         </div>
         <div className="min-w-0 flex-1 pt-0.5">
-          {title && <p className="text-sm font-semibold text-slate-800">{title}</p>}
-          {message && <p className="mt-0.5 text-xs leading-5 text-slate-500">{message}</p>}
+          {title && (
+            <p className="text-sm font-semibold text-slate-800">{title}</p>
+          )}
+          {message && (
+            <p className="mt-0.5 text-xs leading-5 text-slate-500">{message}</p>
+          )}
         </div>
         <button
           onClick={close}
@@ -250,7 +250,6 @@ export function Demo() {
     </div>
   );
 }
-
 
 /* ===========================================================
    ۳) راهنمای استفاده در پروژه‌ی خودت

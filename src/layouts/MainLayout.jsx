@@ -15,7 +15,7 @@ const menus = [
   },
   {
     label: "داشبورد",
-    href: "/dashboard",
+    href: "/panel",
   },
 ];
 

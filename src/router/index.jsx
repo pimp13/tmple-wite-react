@@ -14,9 +14,9 @@ import AuthLayout from "../layouts/AuthLayout";
 const Home = lazy(() => import("../pages/Home"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 const Profile = lazy(() => import("../pages/Profile"));
-const Dashboard = lazy(() => import("../pages/Dashboard"));
+const Dashboard = lazy(() => import("../pages/panel/Dashboard"));
 const Auth = lazy(() => import("../pages/Auth"));
-// const About = lazy(() => import("../pages/About"));
+const Setting = lazy(() => import("../pages/panel/Setting"));
 
 // کامپوننت لودینگ ساده
 const PageLoader = () => (
@@ -63,16 +63,20 @@ export const router = createBrowserRouter([
     ],
   },
   {
-    path: "/dashboard",
+    path: "/panel",
     element: <DashboardLayout />,
     children: [
+      {
+        index: true,
+        element: <Navigate to="home" replace />,
+      },
       {
         path: "home",
         element: withSuspense(Dashboard),
       },
       {
-        index: true,
-        element: <Navigate to="home" replace />,
+        path: "setting",
+        element: withSuspense(Setting),
       },
     ],
   },

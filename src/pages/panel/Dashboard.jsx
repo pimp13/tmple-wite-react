@@ -25,10 +25,10 @@ const navItems = [
 ];
 
 const stats = [
-  { label: "دوره‌های فعال", value: "۰", icon: BookOpen },
-  { label: "ساعت یادگیری", value: "۰", icon: Clock },
-  { label: "گواهینامه", value: "۰", icon: Award },
-  { label: "روز پیاپی", value: "۰", icon: Flame },
+  { label: "دوره‌های فعال", value: 12, icon: BookOpen },
+  { label: "ساعت یادگیری", value: 12, icon: Clock },
+  { label: "گواهینامه", value: 12, icon: Award },
+  { label: "روز پیاپی", value: 12, icon: Flame },
 ];
 
 const upcomingCourses = [
@@ -248,7 +248,7 @@ export default function Dashboard() {
                     </div>
                     <div>
                       <p className="text-lg font-bold text-slate-800 leading-tight">
-                        {s.value}
+                        {s.value.toLocaleString("fa-IR")}
                       </p>
                       <p className="text-xs text-slate-400 mt-0.5">{s.label}</p>
                     </div>
